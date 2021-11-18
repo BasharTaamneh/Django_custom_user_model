@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block title %}Electronic List{% endblock title %}
+
+{% block content %}
+
+{% for electro in electro_list %}
+
+<h4> <a href="{{ electro.get_absolute_url }}"> {{electro.elctronic_name}} </a></h4>
+
+{% endfor %}
+<a href="{% url 'electro_create' %}"> create New elctronic</a>
+{% endblock content %}

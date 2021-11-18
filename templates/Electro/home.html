@@ -1,0 +1,24 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}Home page{% endblock title %}
+
+{% block content %}
+<div>
+    <h1>electro_detail</h1>
+</div>
+
+
+<div style="padding-top: 100px;">
+    <h3>Electronics Review</h3>
+
+    <h3>Electronics</h3>
+    <br><br>
+
+    <br><br>
+    <img src="{% static 'images/Electronics_Cover_2000x1667.png' %}" style="height: 500px">
+    <br><br>
+    <h3><a class="p-2 text-dark" href="{% url 'electro_list'%}"> electronics list</a></h3>
+</div>
+
+{% endblock content %}
