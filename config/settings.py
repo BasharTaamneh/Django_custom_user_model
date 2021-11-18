@@ -23,16 +23,16 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-
+    'Electro',
     # Third-party
     'allauth',
     'allauth.account',
     'crispy_forms',
     'debug_toolbar',
-
+    'sorl.thumbnail',
     # Local
     'accounts',
-    'pages',
+   
 ]
 
 # MIDDLEWARE
@@ -129,6 +129,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 # http://whitenoise.evans.io/en/stable/django.html#add-compression-and-caching-support
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+
+
+ 
+
+
 
 # DJANGO-CRISPY-FORMS CONFIGS
 # ------------------------------------------------------------------------------

@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+<!-- {% load static %} -->
+{% block title %}detail page{% endblock title %}
+{% block content %}
+
+<h2>Details about {{ electro_detail.elctronic_name }}</h2>
+{{ electro_detail.thumbnail_preview }}
+
+<h4>description:</h4>
+<p>{{ electro_detail.description }}</p>
+<h4> owner:</h4>
+<p>{{ electro_detail.owner }}</p>
+<hr />
+<a href="{% url 'electro_update' electro_detail.pk %}"> Update electronic</a>
+<br />
+<a href="{% url 'electro_delete' electro_detail.pk %}"> Delete electronic</a>
+
+{% endblock %}
